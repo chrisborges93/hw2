@@ -266,3 +266,34 @@ new_role["actor_id"] = "11"
 new_role["character_name"] = "Selina Kyle"
 new_role.save
 
+puts "Movies"
+puts "======"
+puts ""
+
+movies = Movie.all  
+
+for movie in movies
+  puts "#{movie.title} #{movie.year_released} #{movie.rated} #{movie.studio_id}"
+end
+
+puts "Movies"
+puts "======"
+puts ""
+
+movies = Movie.includes(:studio).all
+
+for movie in movies
+    studio_name = movie.studio ? movie.studio.name : "Unknown Studio"
+    puts "#{movie.title} #{movie.year_released} #{movie.rated} #{studio_name}"
+  end
+
+
+  roles = Role.includes(:movie, :actor).all
+
+puts "Top Cast"
+puts "========"
+puts ""
+
+for role in roles
+  puts "#{role.movie.title} #{role.actor.name} #{role.character_name}"
+end
