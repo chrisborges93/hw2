@@ -102,3 +102,167 @@
 # TODO!
 
 
+Studio.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+Role.destroy_all
+
+new_studio = Studio.new
+new_studio["name"] = "Warner Bros."
+new_studio.save
+
+new_movie = Movie.new
+new_movie["title"] = "Batman Begins"
+new_movie["year_released"] = "2005"
+new_movie["rated"] = "PG-13"
+new_movie["studio_id"] = "1"
+new_movie.save
+
+new_movie = Movie.new
+new_movie["title"] = "The Dark Knight"
+new_movie["year_released"] = "2008"
+new_movie["rated"] = "PG-13"
+new_movie["studio_id"] = "1"
+new_movie.save
+
+new_movie = Movie.new
+new_movie["title"] = "The Dark Knight Rises"
+new_movie["year_released"] = "2012"
+new_movie["rated"] = "PG-13"
+new_movie["studio_id"] = "1"
+new_movie.save
+
+new_actor = Actor.new
+new_actor["name"] = "Christian Bale"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Michael Caine"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Liam Neeson"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Katie Holmes"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Gary Oldman"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Heath Ledger"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Aaron Eckhart"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Maggie Gyllenhaal"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Tom Hardy"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Joseph Gordon-Levitt"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Anne Hathaway"
+new_actor.save
+
+new_role= Role.new
+new_role["movie_id"] = "1"
+new_role["actor_id"] = "1"
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "1"
+new_role["actor_id"] = "2"
+new_role["character_name"] = "Alfred"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "1"
+new_role["actor_id"] = "3"
+new_role["character_name"] = "Ra's Al Ghul"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "1"
+new_role["actor_id"] = "4"
+new_role["character_name"] = "Rachel Dawes"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "1"
+new_role["actor_id"] = "5"
+new_role["character_name"] = "Commissioner Gordon"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "2"
+new_role["actor_id"] = "1"
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "2"
+new_role["actor_id"] = "6"
+new_role["character_name"] = "Joker"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "2"
+new_role["actor_id"] = "7"
+new_role["character_name"] = "Harvey Dent"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "2"
+new_role["actor_id"] = "2"
+new_role["character_name"] = "Alfred"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "2"
+new_role["actor_id"] = "8"
+new_role["character_name"] = "Rachel Dawes"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "3"
+new_role["actor_id"] = "1"
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "3"
+new_role["actor_id"] = "5"
+new_role["character_name"] = "Commissioner Gordon"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "3"
+new_role["actor_id"] = "9"
+new_role["character_name"] = "Bane"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "3"
+new_role["actor_id"] = "10"
+new_role["character_name"] = "John Blake"
+new_role.save
+
+new_role= Role.new
+new_role["movie_id"] = "3"
+new_role["actor_id"] = "11"
+new_role["character_name"] = "Selina Kyle"
+new_role.save
+
